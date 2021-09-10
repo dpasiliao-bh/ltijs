@@ -1,21 +1,76 @@
 {
-  "name": "ltijs",
-  "version": "5.8.1",
+  "_args": [
+    [
+      "ltijs@5.7.7",
+      "C:\\Users\\Donn Pasiliao\\Programs\\bh-markbook"
+    ]
+  ],
+  "_from": "ltijs@5.7.7",
+  "_id": "ltijs@5.7.7",
+  "_inBundle": false,
+  "_integrity": "sha512-YLPehKSTKY6LXlw64i/jBo2IhJLqjg8O1Sa+9YKGcJ59jBjEnxizA6JcAZL7QolCEYJmhOsYpHHkHE8PQgXTEQ==",
+  "_location": "/ltijs",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "ltijs@5.7.7",
+    "name": "ltijs",
+    "escapedName": "ltijs",
+    "rawSpec": "5.7.7",
+    "saveSpec": null,
+    "fetchSpec": "5.7.7"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/ltijs/-/ltijs-5.7.7.tgz",
+  "_spec": "5.7.7",
+  "_where": "C:\\Users\\Donn Pasiliao\\Programs\\bh-markbook",
+  "author": {
+    "name": "cvmcosta"
+  },
+  "bugs": {
+    "url": "https://github.com/Cvmcosta/ltijs/issues"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.13.10",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "debug": "^4.3.1",
+    "express": "^4.17.1",
+    "fast-url-parser": "^1.1.3",
+    "got": "^11.8.2",
+    "helmet": "^4.4.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.3",
+    "parse-link-header": "^1.0.1",
+    "rasha": "^1.2.5"
+  },
   "description": "Easily turn your web application into a LTI 1.3 Learning Tool.",
-  "main": "index.js",
+  "devDependencies": {
+    "@babel/cli": "^7.13.14",
+    "@babel/core": "^7.13.14",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/plugin-transform-runtime": "^7.13.10",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/register": "^7.13.14",
+    "babel-eslint": "^10.1.0",
+    "chai": "^4.3.4",
+    "chai-as-promised": "^7.1.1",
+    "chai-http": "^4.3.0",
+    "eslint": "^7.23.0",
+    "mocha": "^8.3.2",
+    "nock": "^13.0.11",
+    "nyc": "^15.1.0",
+    "standard": "^16.0.3"
+  },
   "engineStrict": true,
   "engines": {
     "node": ">=10.19.0"
   },
-  "scripts": {
-    "test": "nyc mocha",
-    "build": "standard 'src/**/*.js' --fix && babel src -d dist",
-    "start": "node index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Cvmcosta/ltijs.git"
-  },
+  "homepage": "https://cvmcosta.github.io/ltijs",
   "keywords": [
     "lti",
     "lms",
@@ -24,43 +79,17 @@
     "1.3",
     "advantage"
   ],
-  "author": "cvmcosta",
   "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/Cvmcosta/ltijs/issues"
+  "main": "index.js",
+  "name": "ltijs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cvmcosta/ltijs.git"
   },
-  "homepage": "https://cvmcosta.github.io/ltijs",
-  "dependencies": {
-    "@babel/runtime": "^7.14.5",
-    "body-parser": "^1.19.0",
-    "cookie-parser": "^1.4.5",
-    "cors": "^2.8.5",
-    "debug": "^4.3.1",
-    "express": "^4.17.1",
-    "fast-url-parser": "^1.1.3",
-    "got": "^11.8.2",
-    "helmet": "^4.6.0",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.12.3",
-    "parse-link-header": "^1.0.1",
-    "rasha": "^1.2.5"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.14.5",
-    "@babel/core": "^7.14.5",
-    "@babel/plugin-proposal-class-properties": "^7.14.5",
-    "@babel/plugin-transform-runtime": "^7.14.5",
-    "@babel/preset-env": "^7.14.5",
-    "@babel/register": "^7.14.5",
-    "babel-eslint": "^10.1.0",
-    "chai": "^4.3.4",
-    "chai-as-promised": "^7.1.1",
-    "chai-http": "^4.3.0",
-    "eslint": "^7.28.0",
-    "mocha": "^9.0.0",
-    "nock": "^13.1.0",
-    "nyc": "^15.1.0",
-    "standard": "^16.0.3"
+  "scripts": {
+    "build": "standard 'src/**/*.js' --fix && babel src -d dist",
+    "start": "node index.js",
+    "test": "nyc mocha"
   },
   "standard": {
     "parser": "babel-eslint",
@@ -71,5 +100,6 @@
     "env": [
       "mocha"
     ]
-  }
+  },
+  "version": "5.7.7"
 }
