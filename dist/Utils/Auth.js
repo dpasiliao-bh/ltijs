@@ -234,6 +234,7 @@ class Auth {
     provAuthDebug("Attempting to verify JWT with the given key");
     const verified = jwt.verify(token, key, {
       algorithms: [validationParameters.alg],
+      clockTolerance: 1000,
     });
     await this.oidcValidation(
       verified,
